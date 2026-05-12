@@ -84,5 +84,5 @@ The frontend will usually run on:
 
 - Keep both backend and frontend running at the same time
 - If the backend port changes, update the fetch URLs in `frontend/src/App.jsx`
-- If `dotenv` is missing, run `npm install` inside `backend`
+- If `dotenv` is missing, run `npm install dotenv` inside `backend`
 - Do not upload `node_modules` to GitHub
