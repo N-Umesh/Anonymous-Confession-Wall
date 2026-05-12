@@ -1,0 +1,65 @@
+:root {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #f8eff2;
+  background:
+    radial-gradient(circle at top, rgba(255, 175, 146, 0.22), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(130, 178, 255, 0.18), transparent 24%),
+    linear-gradient(180deg, #120f18 0%, #1a1422 38%, #241726 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 36px 36px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+}
+
+::selection {
+  background: rgba(255, 166, 143, 0.3);
+  color: #fff8fb;
+}
